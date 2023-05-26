@@ -1,0 +1,128 @@
+:root{
+    --mainColor: #f9004d;
+    --blackColor: #101010;
+    --blackColor2: #191919;
+    --grayColor: hsla(0,0%,100%,.6);
+    --skyColor: #4db5ff;
+    --whiteColor: white;
+    /* var(--..ColorName..) */
+  }
+  
+  *{
+      padding: 0;
+      margin: 0;
+      font-family: 'Josefin Sans', sans-serif;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: var(--whiteColor);
+  }
+
+  .Youtube{
+    padding: 40px 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.youtubeTitle{
+  margin: 0 auto;
+}
+
+.Title{
+  font-size: 75px;
+  color: var(--whiteColor);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* the start of List and cards styling */
+.VideosList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--blackColor2);
+  margin: 50px auto;
+  height: 55vh;
+  width: 90%;
+  border-radius: 35px;
+  border-top: 3px solid var(--grayColor);
+  border-bottom: 3px solid var(--grayColor);
+}
+
+.video{
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  margin-top: 2.5vh;
+  height: fit-content;
+
+}
+
+.videoImage{
+  width: 400px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.videoData{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.name{
+  margin: 15px 0;
+}
+
+.rowOfData{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 15px;
+
+}
+
+.link{
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.subscribe{
+  position: absolute;
+  background-color: var(--mainColor);
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: fit-content;
+  right: 80px;
+  top: 120px;
+}
+
+@media (max-width: 600px) {
+  .VideosList{
+    height: fit-content;
+  }
+
+  .video{
+    width: 340px;
+  }
+  
+  .videoImage{
+    width: 340px;
+  }
+
+  .subscribe{
+    right: 30px;
+    top: 210px;
+  }
+
+  .youtubeTitle{
+    margin: 0 50px;
+  }
+
+  .Youtube{
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,29 @@
+:root{
+  --mainColor: #f9004d;
+  --blackColor: #101010;
+  --blackColor2: #191919;
+  --grayColor: hsla(0,0%,100%,.6);
+  --skyColor: #4db5ff;
+  --whiteColor: white;
+  /* var(--..ColorName..) */
+}
+
+*{
+  padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.app{
+  background-color: var(--blackColor);
+}
+
+.color{
+  color: var(--mainColor);
+}
+
+a{
+  color: var(--whiteColor);
+}
